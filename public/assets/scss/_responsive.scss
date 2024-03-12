@@ -1,0 +1,127 @@
+@media only screen and (max-width: 833px) {
+  .footer-content__container {
+    flex-direction: column;;
+  }
+  .headerMaster-navbar-hamburgerMenu-icon {
+    display: block;
+  }
+  .headerMaster-navbar-hamburgerMenu-iconLogin {
+    display: block;
+  }
+  .headerMaster-navbar-menu li a:hover {
+    background-color: transparent;
+    font-weight: 700;
+  }
+
+}
+
+@media (min-width: 834px) {
+ /* footer {
+    max-width: 1000px;
+  }*/
+  .footer-content__container {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+
+  }
+  .modal-content {
+    flex-direction: column;
+  }
+  .modal-buttons-container {
+    flex-direction: column;
+  }
+  .modal-content-text-container {
+    justify-content: center;
+  }
+  .modal-content-message-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .modal-content-title-container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .icon-emojiModal {
+    font-size: 3rem;
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+  .headerMaster-navbar-hamburgerMenu-icon {
+    display: none;
+  }
+  .headerMaster-navbar-hamburgerMenu-iconLogin {
+    display: none;
+  }
+  .headerMaster-navbar-menu {
+    display: flex; /* Cambia a disposición horizontal */
+    position: absolute; /* Deshazte del posicionamiento absoluto */
+    justify-content: space-between; /* Centra los elementos del menú, si lo deseas */
+    background-color: transparent; /* O cualquier color de fondo que prefieras */
+    width: 550px;
+    visibility: visible;
+    opacity: 1;
+    left: 50%; /* Mantiene el botón a la derecha; ajusta según necesites */
+    bottom: 0; /* Posiciona el botón en el límite inferior del viewport */
+    transform: scaleY(1);
+    transform: translateX(-50%);
+    height: 48px;
+    padding: 0;
+
+
+  }
+
+  .headerMaster-navbar-menu li {
+    margin: 0 10px;
+    padding: 0 5px 0 5px;
+    height: 48px;
+  }
+
+  .headerMaster-navbar-menu li a {
+    padding: 15px 15px 0 15px; /* Ajusta el padding según necesites */
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 100%;
+  }
+  .headerMaster-navbar-menu li a:hover {
+    background-color: var(--scale1-color);
+    font-weight: 700;
+  }
+
+  /* Opcional: Esconde el botón del menú hamburger en pantallas grandes */
+  .headerMaster-navbar-hamburgerMenu-icon {
+    display: none;
+  }
+}
+/* Media query para dispositivos más grandes (desktop) */
+@media (min-width: 834px) {
+  .servicios-destacados {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centra el texto en dispositivos más pequeños */
+  }
+  .servicios-destacados h1 {
+    font-size: 24px; /* Tamaño más grande para desktop */
+  }
+
+  .servicios-destacados p {
+    font-size: 18px; /* Tamaño ajustado para desktop */
+  }
+
+  .servicios-destacados strong {
+    font-size: 20px; /* Destacado más grande para desktop */
+  }
+}
+//Acerca de nosotros
+@media (min-width: 834px) {
+  .avatarsAbout__card-textBox p {
+    font-size: 1.1rem;
+  }
+  .avatarsAbout__card-textBox h3 {
+    font-size: 1.5rem;
+  }
+}

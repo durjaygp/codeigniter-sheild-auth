@@ -1,0 +1,30 @@
+@import "../../../node_modules/sanitize.css/sanitize";
+@import "_variables";
+@import "_mixins";
+@import '_base';
+@import "_headers";
+@import "_links";
+@import "_images";
+@import "_modal";
+@import "_button";
+@import "_forms";
+@import "_helpers";
+@import "_header_avatars";
+@import "_texts";
+@import "_footer_content";
+@import "_acerca_de";
+@import "_servicios";
+@import "_accesible";
+
+
+// Siempre al final
+@import "_responsive";
+// Fontello
+@import "../fontello/css/animation";
+@import "../fontello/css/fontello";
+@import "../fontello/css/fontello-codes";
+@import "../fontello/css/fontello-embedded";
+@import "../fontello/css/fontello-ie7";
+@import "../fontello/css/fontello-ie7-codes";
+// End
+

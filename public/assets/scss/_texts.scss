@@ -1,0 +1,25 @@
+.servicios-destacados {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* Centra el texto en dispositivos más pequeños */
+}
+
+.servicios-destacados h1 {
+  color: var(--fontPrimary-color);
+  font-size: 18px; /* Tamaño más pequeño para dispositivos móviles */
+  margin-bottom: 15px;
+}
+
+.servicios-destacados p {
+  color: var(--fontNeutral-color);
+  font-size: 16px; /* Tamaño más pequeño para dispositivos móviles */
+  line-height: 1.6;
+}
+
+.servicios-destacados strong {
+  color: var(--fontPrimary-color);
+  font-size: 18px; /* Ligeramente más grande para destacar, aun en móviles */
+}

@@ -1,0 +1,32 @@
+// _mixins.scss
+@mixin font-theme($font-weight, $font-style: normal, $font-optical-sizing: auto, $settings-width: 100) {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: $font-optical-sizing;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-variation-settings: "wdth" $settings-width;
+}
+@mixin font-form-login-logo-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+/*
+ mixin para resaltar elementos en tiempo de dessarrollo
+ */
+@mixin debug-outline($outline-color: red, $outline-width: 4px) {
+  outline: $outline-width solid $outline-color;
+}
+/*
+ mixin para estilos repetitivos de los botones modales
+ */
+@mixin buttonModalStyle {
+  font-size: 1.2rem;
+}
+/*
+ mixin para estilos repetitivos de los textos modales
+ */
+@mixin pModalStyle {
+  font-size: 1.1rem;
+}

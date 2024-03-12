@@ -1,0 +1,22 @@
+.toggleThemeButtonModal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.demo-button {
+  background-color: var(--success-color); /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 12px;
+}
+
+.demo-button:hover {
+  background-color: #689645; /* Darker green */
+}

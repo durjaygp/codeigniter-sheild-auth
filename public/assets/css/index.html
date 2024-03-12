@@ -1,0 +1,26 @@
+<head><link href="./styles.6c9920f266ceb72ebe1a.css" rel="stylesheet"><link href="./style.9f4de9d86269a2be6bd9.css" rel="stylesheet"></head><!--Ventanas modales de alerta para activar con javascript-->
+<?= view_cell('AlertModalCell', [
+    'typeOfModal' => '',
+    'titleModal' => '',
+    'typeOfIconModal' => '',
+    'messageModal' => '',
+]) ?>
+
+<?php
+$jsDirectory = 'assets/js/';
+$jsFiles = scandir($jsDirectory);
+$jsFilePattern = '/app\.[a-f0-9]{20}\.js$/'; // Ajusta el patrón de búsqueda según sea necesario
+
+foreach ($jsFiles as $file) {
+    if (preg_match($jsFilePattern, $file)) {
+        $jsFileName = $file;
+        break;
+    }
+}
+
+if (isset($jsFileName)) {
+    echo '<script src="' . base_url('assets/js/' . $jsFileName) . '"></script>';
+}
+
+?>
+<!--<script src="<?php /*echo base_url('assets/js/app.js'); */?>"></script>-->

@@ -1,0 +1,128 @@
+.headerMaster-logo {
+ height: 48px;
+ width: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: 10px;
+}
+.headerMaster-logo a {
+ display:inline-block;
+ width:100px;
+ height:auto;
+}
+.headerMaster {
+ //@include debug-outline(rgba(54, 234, 8, 0.33),2px);
+ width: 100%;
+ height: 48px;
+ max-width: $max-width;
+ margin: 0 auto;
+ background-color: var(--secondary-color);
+}
+.headerMaster-menuContainer {
+ //@include debug-outline(#000000,3px);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1400px;
+ height: 100%;
+ margin: 0 auto;
+}
+.headerMaster-navbar {
+ //@include debug-outline(rgba(241, 47, 4, 0.26),4px);
+ display: flex;
+ align-items: center; // To vertically align the items in the center
+ justify-content: space-between; // To create equal spacing between the items
+ position: relative;
+
+}
+// Propiedades generales de los iconos de navbar
+.headerMaster-navbar-icon {
+ margin-right: 10px;
+}
+.headerMaster-navbar-hamburgerMenu-icon {
+ margin-right: 0; // mitad del espacio
+ cursor: pointer;
+ display: none;
+}
+// Hamburger menu
+.hamburger {
+ position: relative;
+ width: 48px;
+ height: 48px;
+ z-index: 110;
+
+ &::before,
+ &::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--fontPrimary-color);
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+ }
+
+ &::before {
+  transform: translate(-50%, -4px);
+ }
+
+ &::after {
+  transform: translate(-50%, 4px);
+ }
+
+ /* Controlamos el estado activo con clase ".active" en lugar del evento hover */
+ &.active::before {
+  transform: translate(-50%, 0) rotate(45deg);
+ }
+
+ &.active::after {
+  transform: translate(-50%, 0) rotate(-45deg);
+ }
+}
+
+.headerMaster-navbar-menu {
+ /*display: none;*/
+ visibility: hidden;
+ opacity: 0;
+ transform: scaleY(0);
+ transform-origin: top; // Asegura que el menú se expanda hacia abajo.
+ transition: opacity 0.5s ease, transform 0.5s ease; // Añade transición a transform.
+ overflow: hidden;
+ list-style-type: none;
+ padding: 50px 0 0 0;
+ margin: 0;
+ position: absolute;
+ background-color: var(--secondary-color);
+ z-index: 100;
+ top: 0;
+ right: 0;
+ width: 100%;
+ height: 100%;
+
+ li {
+  /*border-bottom: 1px solid var(--scale2-color);*/
+  padding: 3px 48px 4px;
+  a {
+   display: block;
+   padding: 10px;
+   color: var(--fontPrimary-color);
+   font-size: 28px;
+   font-weight: 600;
+   text-decoration: none;
+   &:hover {
+    background-color: var(--scale1-color);
+    font-weight: 700;
+   }
+  }
+ }
+}
+
+.hamburger.active + .headerMaster-navbar-menu {
+ visibility: visible;
+ opacity: 1;
+ transform: scaleY(1);
+ height: 100%;
+}

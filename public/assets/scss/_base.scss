@@ -1,0 +1,65 @@
+// Basic font styling
+html {
+  @include font-theme(400);
+}
+
+// Reset padding and margins
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Set basic root font size for REM calculations
+html {
+  font-size: 16px;
+  background-color: var(--secondary-color);
+
+}
+
+
+
+body {
+  background-color: var(--base-color);
+  line-height: 1.5;
+  color: var(--fontPrimary-color);
+  @include font-theme(400);
+  max-width: $max-width;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// Render links consistently
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Clear default button styling
+button {
+  border: none;
+  padding: 0;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+// Consistent table styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  bottom: 0;
+
+
+}
+main {
+  width: 100%;
+}

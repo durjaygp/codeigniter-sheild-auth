@@ -1,0 +1,67 @@
+
+/*.hero-section {
+  background: transparent url(../../textures/git/isometric-grid.png) top right
+  repeat;
+  background-size: 35px 21px;
+}*/
+.header-avatars__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 350px;
+}
+.header-avatars__circle-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid var(--fontPrimary-color);
+  box-shadow: 0 0 3px 5px var(--basecolor);
+}
+.header-avatars__circle-avatar img {
+  width: 100%;
+  height: auto;
+}
+.avatar-content-user-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px #4e443c;
+}
+.avatar-content-user-img img {
+  width: 100%;
+  height: auto;
+}
+/*
+.content-user-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.content-user-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10px;
+  height: 40px;
+}
+.content-user-title-text-up {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4e443c;
+}
+*/

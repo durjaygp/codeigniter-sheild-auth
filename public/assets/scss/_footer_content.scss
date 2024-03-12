@@ -1,0 +1,14 @@
+.footer-content__container {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--fontNeutral-color);
+  border-top: solid 1px var(--scale2-color);
+  padding: 15px 10px 40px 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  bottom: 0;
+}
+.footer-content__container p {
+  line-height: 1.7;
+}

@@ -1,0 +1,48 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.service-card {
+  width: 90%;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--fontPrimary-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); // Sombra suave para profundidad
+  border-radius: 8px; // Bordes redondeados para un aspecto moderno
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Transición suave
+  text-align: center;
+  &:hover {
+    transform: translateY(-5px); // Elevación al pasar el ratón
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2); // Sombra más prominente al pasar el ratón
+  }
+
+  @media (min-width: 768px) {
+    width: calc(33.333% - 40px);
+  }
+
+  h3 {
+    color: var(--fontLink-color);
+    margin-bottom: 15px; // Espaciado para mejorar la legibilidad
+  }
+
+  p {
+    color: var(--fontSecondary-color);
+  }
+}
+.iconoServicio {
+
+  font-size: 4rem; /* Ajusta este valor según sea necesario */
+  color: var(--fontNeutral-color);
+  padding-bottom: 5px;
+}
+.service-card__iconContainer {
+  padding-bottom: 10px;
+}

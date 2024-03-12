@@ -1,0 +1,47 @@
+.avatarsAbout__box {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 40px 10px;
+  max-width: 800px;
+  padding: 20px;
+  margin: 30px auto;
+  margin-bottom: 200px;
+
+}
+.avatarsAbout__card-image {
+  min-width: 70px;
+  width: 100%;
+  padding-top: 100%; /* Asegura que la altura sea igual al ancho */
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--fontPrimary-color);
+  box-shadow: 0 0 3px 5px var(--basecolor);
+  justify-self:center ;
+  align-self: center;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+.avatarsAbout__card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+
+}
+.avatarsAbout__card-textBox {
+  //max-width: 250px;
+  padding-left: 10px;
+  min-width: 200px;
+  max-width: 470px;
+  height: 100px;
+  align-self: center;
+  overflow: hidden;
+
+}
+.avatarsAbout__card-textBox p {
+  color: var(--fontSecondary-color);
+}

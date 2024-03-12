@@ -1,0 +1,65 @@
+$max-width: 100%;
+/* Para los emojis de los modales */
+$emoji-fire: "🔥";
+$emoji-x: "❌️";
+$emoji-warning: "⚠️";
+$emoji-success: "✅️";
+
+
+
+:root {
+  // Light theme
+  --base-color: #fcfcfa;
+
+  --secondary-color: #f0efe7;
+  --neutral-color:#b1b1b1;
+  --logo-color:#f44d27;
+
+  --scale0-color: #f1f1e9;
+  --scale1-color: #e3e3e3;
+  --scale2-color: #d5d4cc;
+  --scale3-color: #c4c4be;
+  --scale4-color: #b2b1ab;
+  --scale5-color: #a49b90;
+  --scale6-color: #847d75;
+
+  --success-color: #88c459;
+  --error-color: #bc5454;
+  --warning-color: #cf7ca6;
+  --warning-modal-color: #FFF0FB;
+
+  --fontPrimary-color:#4e443c;
+  --fontSecondary-color: #888784;
+  --fontNeutral-color:#707070;
+  --fontSearch-color:#666666;
+  --fontCode-color:#222222;
+  --fontTitle-color: #2964fb;
+  --fontLink-color:#0388a6;
+}
+
+body.dark {
+  // Dark Theme
+  --base-color: #2f2f2f;
+  --secondary-color: #514f4f;
+  --neutral-color: #dddddd;
+
+  --scale0-color: #ffffff;
+  --scale1-color: #afadad;
+  --scale2-color: #a5a5a5;
+  --scale3-color: #878681;
+  --scale4-color: #696969;
+  --scale5-color: #3b3b3b;
+  --scale6-color: #212121;
+
+  --success-color: #88c459;
+  --error-color: #953737;
+  --warning-color: #ab6689;
+  --warning-modal-color: #FFF0FB;
+  --fontPrimary-color: #f7f7f7;
+  --fontSecondary-color:#c6c6c6;
+  --fontNeutral-color: #c4c4c4;
+  --fontSearch-color:#6e6e6e;
+  --fontCode-color:#dadbb1;
+  --fontTitle-color: #1973e8;
+  --fontLink-color:#84bcde;
+}

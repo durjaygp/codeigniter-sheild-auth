@@ -1,0 +1,7 @@
+.headerMaster-menuContainer-logoImg {
+  height: 44px;
+  width: auto; /* or you could specify a fixed width here */
+  max-width: 100%; /* to prevent the image from being larger than its container */
+  padding: 4px 16px;
+  //@include debug-outline();
+}

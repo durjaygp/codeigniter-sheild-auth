@@ -1,0 +1,44 @@
+<header id="headerMaster" class="headerMaster">
+    <div class="headerMaster-menuContainer">
+        <ul class="headerMaster-navbar-menu">
+            <li><a href="">Home</a></li>
+            <?php if(auth()->user()){ ?>
+                <li><a href="#"><?= auth()->user()->username;  ?></a></li>
+            <?php } else{ ?>
+                <li><a href="<?= site_url('login');?>">Login</a></li>
+                <li><a href="<?= site_url('register');?>">Register</a></li>
+            <?php } ?>
+        </ul>
+        <div class="headerMaster-logo">
+        <a aria-label="Volver a inicio" href="<?php echo base_url(); ?>" class="headerMaster-menuContainer-logoLink">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 162.984 44.979">
+                <title>Volver a inicio</title>
+                <desc>Logo de Automata que dirige a la página de inicio.</desc>
+  <g style="fill:var(--logo-color);fill-opacity:1">
+      <path d="M123.393 160.216c-.221 0-2.708.917-2.926 1.078-.051.039.247.87.664 1.847l.757 1.776-.843.856-.843.856-1.84-.747-1.839-.748-.602 1.56-.602 1.56 1.787.82c1.725.79 1.787.86 1.782 1.97-.005 1.113-.065 1.178-1.744 1.889a63.12 63.12 0 0 0-1.822.79c-.08.054 1.095 2.923 1.269 3.096.047.047.877-.264 1.844-.692l1.758-.777.847.812.847.811-.619 1.555-.753 1.886c-.124.306 2.056 1.336 2.826 1.336.184 0 .64-.75 1.012-1.668.66-1.625.707-1.668 1.87-1.668 1.258 0 1.297.048 2.4 2.945l.255.67 1.55-.644c1.12-.465 1.512-.778 1.409-1.125a41.05 41.05 0 0 0-.695-1.925l-.553-1.443.779-.779c.77-.77.791-.773 1.962-.274 2.689 1.147 2.47 1.172 3.145-.356.339-.766.616-1.5.616-1.633 0-.132-.825-.558-1.833-.947l-1.832-.707.088-1.196c.085-1.142.166-1.227 1.757-1.873 1.827-.74 1.902-.942 1.083-2.9l-.467-1.117-1.827.788-1.826.789-.756-.71c-.912-.857-.925-1.077-.157-2.77.33-.728.603-1.46.606-1.626.005-.276-2.243-1.365-2.818-1.365-.132 0-.572.75-.978 1.668-.713 1.613-.778 1.668-1.926 1.668-1.154 0-1.208-.047-1.88-1.668-.38-.917-.8-1.668-.932-1.668zm2.904 6.967c1.21.025 2.354.657 3.153 1.833 1.06 1.56.8 3.419-.665 4.762-.933.854-1.308.996-2.639.996-1.352 0-1.68-.129-2.558-1.007-1.845-1.845-1.599-4.67.519-5.96.714-.436 1.464-.64 2.19-.624z" style="fill:var(--logo-color);fill-opacity:1;stroke:#000;stroke-width:0" transform="translate(25.959 -134.464) scale(.91875)"/>
+      <path d="M197.377 32.068 162.427 9.21V22H58.6c-18.884 0-30.707 15.364-30.707 34.247v135.516l20.869.036.377-141.976c.011-4.357 3.545-7.898 7.902-7.903l105.386-.113v11.701z" style="fill:var(--logo-color);fill-opacity:1" transform="rotate(-90 83.982 -35.925) scale(.19368)"/>
+      <path d="M197.377 32.068 162.427 9.21V22H58.6c-18.884 0-30.707 15.364-30.707 34.247v135.516l20.869.036.377-141.976c.011-4.357 3.545-7.898 7.902-7.903l105.386-.113v11.701z" style="fill:var(--logo-color);fill-opacity:1" transform="rotate(90 83.26 80.183) scale(.19368)"/>
+  </g>
+                <g style="fill:var(--fontPrimary-color);fill-opacity:1">
+                    <text xml:space="preserve" x="86.332" y="45.931" style="font-weight:700;font-size:23.4723px;font-family:&quot;Open Sans&quot;;-inkscape-font-specification:&quot;Open Sans, Bold&quot;;text-align:center;text-anchor:middle;fill:var(--fontPrimary-color);fill-opacity:1;stroke:#000;stroke-width:.0231027;stroke-dasharray:none" transform="translate(-26.029 -21.97)"><tspan x="86.332" y="45.931" style="fill:var(--fontPrimary-color);fill-opacity:1;stroke-width:.0231027">Automata</tspan></text>
+                    <text xml:space="preserve" x="132.572" y="59.818" style="font-weight:700;font-size:12.3761px;font-family:&quot;Open Sans&quot;;-inkscape-font-specification:&quot;Open Sans, Bold&quot;;text-align:center;text-anchor:middle;fill:var(--fontPrimary-color);fill-opacity:1;stroke:#000;stroke-width:.0121813;stroke-dasharray:none" transform="translate(-26.029 -21.97)"><tspan x="132.572" y="59.818" style="fill:var(--fontPrimary-color);fill-opacity:1;stroke-width:.0121813">ZEN</tspan></text>
+                </g>
+</svg>
+
+            <!--<img class="headerMaster-menuContainer-logoImg" src="<?php /*echo base_url('assets/img/logos/logo1opt.svg'); */?>" alt="Imagen del logo de Automata ZEN">-->
+            <span class="visually-hidden">Volver a inicio</span>
+        </a>
+        </div>
+        <nav id="headerMasterNavbar" class="headerMaster-navbar">
+            <span class="headerMaster-navbar-icon" id="theme-toggle">
+                <i class="icon-moon"></i>
+            </span>
+            <span class="headerMaster-navbar-icon headerMaster-navbar-hamburgerMenu-iconLogin">
+                <a href="<?= site_url('login'); ?>"><i class="icon-user"></i></a>
+            </span>
+            <div class="headerMaster-navbar-hamburgerMenu-icon">
+                <div class="hamburger"></div>
+            </div>
+        </nav>
+        </div>
+</header>
